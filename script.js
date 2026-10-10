@@ -67,7 +67,7 @@ $("#badges").innerHTML=BADGES.map(b=>`<span>${b}</span>`).join("");
  const a=(u,t)=>`<a href="${E(u)}" target="_blank" rel="noopener noreferrer">${E(t)}</a>`;
  const CMD={
   help:()=>["Commands:","  about      who I am","  skills     what I work with","  projects   sites I've worked on","  plugins    plugins I've built","  contact    how to reach me","  clear      clear the screen"].map(E),
-  about:()=>["Raphael M. Maurin","Web developer at Ad On Group PH, based in "+CONFIG.location+".","I manage websites and build the custom functionality they need."].map(E),
+  about:()=>["Raphael M. Maurin","Web developer based in "+CONFIG.location+".","I manage websites and build the custom functionality they need."].map(E),
   skills:()=>Object.entries(SKILLS).map(([k,v])=>`<span class="c">${E(k)}</span>: ${E(v.join(", "))}`),
   projects:()=>PROJECTS.map(p=>`${E(p.n)} (${E(p.t.join(", "))}) ${a(p.url,"visit")}`),
   plugins:()=>PLUGINS.map(p=>`${E(p[0])}`),
